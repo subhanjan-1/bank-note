@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        /* CSS code for styling the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddd316;
+            
+            background-image: url('images.jpg'); /* Replace with your currency-themed background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #0a0606;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BANK NOTE AUTHENTICATOR</h1>
+        <form action="/submit" method="POST">
+            <label for="Variance">Variance:</label>
+            <input type="number" id="name" name="v" required>
+            
+            <label for="skewness">skewness</label>
+            <input type="number" id="email" name="sk" required>
+            <label for="curtosis">curtosis</label>
+            <input type="number" id="email" name="cu" required>
+            <label for="entropy">entropy</label>
+            <input type="number" id="email" name="en" required>
+            
+           
+            
+            <input type="submit" value="PREDICT">
+        </form>
+    </div>
+</body>
+</html>

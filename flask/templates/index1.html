@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif; /* Google Font: Montserrat */
+            /* Replace with your currency-themed background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    background<img src= "{{url_for('static', filename='/Image/image1.jpg')}}" >
+    <header>
+        <h1>Currency dectector</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to our currency dectector website. We provide aunthenticity of the note</p><br>
+        {% if prediction==1 %}
+         <p>THE NOTE IS ORIGINAL</p>
+        {% else %}
+         <p>THE NOTE IS FAKE</p>
+         {% endif %}
+
+    </div>
+</body>
+</html>
